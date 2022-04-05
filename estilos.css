@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+ background-color: black;   
+
+}
+/* root var()  */
+:root{
+    --font-family: 'Bebas Neue', cursive;
+    --font02: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+.section_container{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    height: 97vh;
+    padding-top: 1px;
+  background-image: url("img/ankhesenamun-EogK39kznns-unsplash.jpg");
+  background-size: cover;
+  background-position: center;  
+
+  
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 90px;
+    margin: 30px auto;
+    z-index: 999999999999;
+    align-items: center;
+    background-color: rgb(104, 30, 30);
+    
+
+    position: fixed;
+    left: 144px;
+}
+.logo{
+    position: relative;
+    left: -90px;
+    color: rgb(247, 45, 45);
+    font-family: var(--font-family);
+    font-size: 2rem;
+    text-decoration: none;
+}
+.logo:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 3px rgb(238, 104, 31);
+    color: rgb(255, 140, 0);
+    transition: 0.1s;
+}
+
+.home{
+    text-decoration: none;
+}
+.cta_container{
+    width: 50%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+ 
+}
+.cta{
+    
+    color: rgb(240, 145, 145);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.cta:hover{
+    transition: .2s;
+    padding: 20px 0px;
+    background-color: red;
+    color: whitesmoke;
+}
+.cta:active{
+    color: rgb(246, 247, 243);
+
+}
+.portada{
+    width: 40%;
+    cursor: pointer;
+    margin: 250px auto;
+    
+    text-align: center;
+    color: rgb(245, 233, 233);
+    
+}
+.portada:hover{
+    color: greenyellow;
+}
+em{
+    font-family: var(--font02);
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+
+}
+.titulo{
+    text-size-adjust: 500px;
+    font-size: 6rem;
+    font-family: var(--font-family);
+    text-shadow: 2px 1px 1px black;
+    text-align: center;
+}
+
+.capsul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 20px;
+    margin: -100px auto;
+    
+    text-align: center;
+
+}
+.cap_cta{
+    width: 45%;
+    
+    font-family: var(--font-family);
+    background-color: rgb(228, 49, 18);
+    border: 1px solid red;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 5px 5px;
+}
+
+/* ceparadores...
+no especificar posicion relative o alguna otra ya que se encuentran en varia posiciones del documento.
+se podria generar un colapso de margenes  */
+
+.separador_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(104, 30, 30);
+    text-align: center;
+    color: rgb(246, 247, 243);
+}
+.aiuda{
+    font-size: 4rem;
+    font-family: var(--font02);
+}
+.subtext{
+    font-family: var(--font02);
+    font-size: 1.3rem;
+}
+.cta_ceparador{
+    font-size: 1.7rem;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 5px 50px;
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+.cta_ceparador:hover{
+    transition: 0.1s;
+    background-color: whitesmoke;
+    color: rgb(104, 30, 30);
+}
+/* about us section */
+
+
+.bloc{
+    display: flex;
+    width: 100%;
+    height: 78%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fondo_bloque{
+    width: 100%;
+    display: flex;
+    margin-top: 123px;
+    background-image: url("img/devin-h-GRI_6wnQjjs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.about_bloque{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 33.339%;
+    height: 100%;
+
+    background-image: linear-gradient(rgba(65, 4, 4, 0.61), rgba(0, 0, 0, 0.589));
+    text-align: center;
+    
+    
+}
+.descript_icon{
+    color: whitesmoke;
+    font-family: var(--font02);
+    font-size: 2rem;
+}
+.about_bloque:hover{
+    transition: .2s;
+    background-color: rgba(228, 50, 18, 0.521);
+}
+.parrafo{
+    width: 100%;
+    height: 22%;
+    margin: 0px auto;
+    text-align: center;
+    color: whitesmoke;
+    
+    
+}
+.about_parrafo{
+    margin: 10px auto;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo02{
+    font-size: 3rem;
+}
+/* inter section */
+.inter{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    
+}
+.icon_container{
+    width: 20%;
+    height: 100%;
+    
+}
+.iconos{
+    display: flex;
+    height: 30%;
+}
+.icon_container{
+    width: 20%;
+    height: 200px;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 250px;
+}
+.icon_container :nth-child(){
+line-height: 200px;
+}
+.icon_container:hover{
+    transition: .2s;
+    background-color: rgb(172, 5, 5);
+}
+.bloque_inter02{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    /* background-color: red; */
+}
+.cuadro01{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid gold; */
+}
+.titulo{
+    color: whitesmoke;
+}
+.parrafo{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cta_inter{
+    
+    
+    margin: 50px auto;
+    background-color: red;
+    text-align: center;
+}
+.cta_inter:hover{
+    
+    background-color: whitesmoke;
+    color: red;
+}
+a.boton{
+    line-height: 50px;
+    text-decoration: none;
+    font-family: var(--font02);
+    font-size: 2rem;
+    color: whitesmoke;
+
+}
+a.boton:hover{
+    color: red;
+}
+
+.cuadro02{
+    width: 50%;
+}
+
+
+
+.img_red{
+    width: 100%;
+}
+.gallery{
+    margin: 100px auto;
+    width: 95%;
+    height: 90%;
+    
+    
+}
+.portfolio{
+    height: 150vh;
+}
+/* galeria de imagenes de code open */
+
+div#carousel { 
+    perspective: 1200px; 
+    background: #100000; 
+    padding-top: 10%; 
+    font-size:0; 
+    margin-bottom: 3rem; 
+     
+  }
+  figure#spinner { 
+    transform-style: preserve-3d; 
+    height: 300px; 
+    transform-origin: 50% 50% -500px; 
+    transition: .5s; 
+  } 
+  figure#spinner img { 
+    width: 40%; max-width: 425px; 
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline:1px solid transparent; 
+  }
+  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+  }
+  figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+  figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+  figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+  figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+  figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+  figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+  figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+  div#carousel ~ span { 
+    color: rgb(230, 11, 11); 
+    margin: 5%; 
+    display: inline-block; 
+    text-decoration: none; 
+    font-size: 5rem; 
+    transition: 0.6s color; 
+    position: relative; 
+    margin-top: -10rem; 
+    border-bottom: none; 
+    line-height: 0; }
+  div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+  /*  aquío termina el code open css */
+   
+  .blogs{
+      width: 95%;
+      height: 150vh;
+      border: 1px solid red;
+  }
+  .blogs_container01{
+      height: 20%;
+
+  }
+  .titulo_blogs{
+      text-align: center;
+      width: 200px;
+      font-size: 3rem;
+      font-family: var(--font-family);
+      color: whitesmoke;
+      margin: 120px auto;
+  }
+  .blogs_container02{
+      display: flex;
+  }
+
+  .paragraph{
+      width: 50%;
+      height: 20%;
+      border: 1px solid red;
+      color: whitesmoke;
+      font-size: 1.5rem;
+      font-family: var(--font02);
+      margin: -110px auto;
+  }
+
+  .section_blogs{
+      width: 50%;
+      height: 100%;
+      border: 1px solid red;
+    
+  }
+  .blogs_container02{
+      width: 100%;
+      height: 80%;
+  }
+  .lista{
+      color: whitesmoke;
+  }
+  ul{
+      
+      margin: 20px auto;
+      font-size: 2.5rem;
+  }
+  .element{
+      display: flex;
+      
+  }
+  .uls{
+      font-size: 1.2rem;
+  }
+  .img_blogs{
+      width: 100%;
+  }
+  
+
